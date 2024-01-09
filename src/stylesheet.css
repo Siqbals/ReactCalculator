@@ -1,0 +1,54 @@
+@keyframes hoverbuttons {
+    from { transform: scale(1); }
+    to { transform: scale(1.1); }   
+}
+
+@keyframes hoverbuttons-reverse {
+    from { transform: scale(1.1); }
+    to { transform: scale(1); }   
+}
+
+.calcbox {
+    width: 500px;
+    height: 75px;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    top: 100px;
+    left: 35vw;
+
+    border-radius: 15px;
+}
+
+.backgroundimg {
+    background-image: url('background.jpeg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+}
+
+.buttons {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    top: 100px;
+    left: -10px;
+    background-color: white;
+    border: none;
+    border-radius: 15px;
+    margin: 10px;
+}
+
+.buttons:hover { animation: hoverbuttons 0.2s ease-in-out forwards; }
+.buttons:not(:hover) { animation: hoverbuttons-reverse 0.2s ease-in-out forwards; }
+
+.inputtext {
+    position: absolute;
+    width: 490px;
+    top: -13px;
+    font-size: 30px;
+    text-align: right;
+}
+
+
